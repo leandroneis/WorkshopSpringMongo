@@ -14,7 +14,7 @@ public class PostDTO implements Serializable {
     private Date date;
     private String title;
     private String body;
-    private User author;
+    private AuthorDTO author;
 
     public PostDTO(){}
     public PostDTO(Post obj){
@@ -57,11 +57,11 @@ public class PostDTO implements Serializable {
         this.body = body;
     }
 
-    public User getAuthor() {
+    public AuthorDTO getAuthor() {
         return author;
     }
 
-    public void setAuthor(User author) {
+    public void setAuthor(AuthorDTO author) {
         this.author = author;
     }
 }
